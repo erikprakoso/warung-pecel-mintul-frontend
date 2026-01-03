@@ -1,0 +1,75 @@
+---
+import { Separator } from "@/components/ui/separator";
+import { Instagram, Facebook, Phone } from "lucide-react";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer
+    class="bg-foreground text-background py-12 md:py-16"
+    data-aos="fade-up"
+    data-aos-offset="0"
+>
+    <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-12 mb-12">
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-primary">
+                    Warung Pecel Mbak Mintul
+                </h3>
+                <p class="text-gray-400 max-w-sm">
+                    Menghadirkan cita rasa otentik warisan leluhur. Nikmati
+                    kelezatan pecel khas dan sate legendaris kami.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-lg font-semibold text-white">Hubungi Kami</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="flex items-center gap-2">
+                        <Phone className="w-4 h-4" /> 0812-3456-7890 (WhatsApp)
+                    </li>
+                    <li>Jl. Semeru No. 12, Madiun</li>
+                    <li>Jawa Timur, Indonesia</li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-lg font-semibold text-white">Ikuti Kami</h4>
+                <div class="flex gap-4">
+                    <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="p-2 bg-white/10 rounded-full hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-purple-500 transition-all duration-300 text-white"
+                        aria-label="Instagram"
+                    >
+                        <Instagram className="w-5 h-5" />
+                    </a>
+                    <a
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="p-2 bg-white/10 rounded-full hover:bg-[#1877F2] transition-colors duration-300 text-white"
+                        aria-label="Facebook"
+                    >
+                        <Facebook className="w-5 h-5" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <Separator className="bg-white/10" />
+
+        <div
+            class="mt-8 text-center text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+            <p>
+                &copy; {currentYear} Warung Pecel Mbak Mintul. All rights reserved.
+            </p>
+            <p>
+                Dibuat dengan <span class="text-green-500">♥</span> untuk pecinta
+                kuliner.
+            </p>
+        </div>
+    </div>
+</footer>

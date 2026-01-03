@@ -1,0 +1,123 @@
+---
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Star } from "lucide-react";
+
+const products = [
+    {
+        title: "Nasi Pecel Madiun",
+        description:
+            "Sayuran hijau segar dengan guyuran sambal kacang kental yang gurih dan pedas pas.",
+        price: "Rp 12.000",
+        image: "https://images.unsplash.com/photo-1647102398918-1936e92c2da2?q=80&w=2670&auto=format&fit=crop",
+        tag: "Best Seller",
+        rating: 4.9,
+    },
+    {
+        title: "Lontong Sayur",
+        description:
+            "Kuah santan gurih dengan isian lengkap: labu siam, tahu, telur, dan kerupuk.",
+        price: "Rp 13.000",
+        image: "https://images.unsplash.com/photo-1603083569726-5fa965cb2a25?q=80&w=2670&auto=format&fit=crop",
+        tag: "Favorit",
+        rating: 4.8,
+    },
+    {
+        title: "Lontong Campur",
+        description:
+            "Perpaduan unik rasa pecel dan lodeh dalam satu piring. Nikmat tiada tara.",
+        price: "Rp 15.000",
+        image: "https://images.unsplash.com/photo-1563896583-a7407a5146c8?q=80&w=2670&auto=format&fit=crop",
+        tag: "Must Try",
+        rating: 4.9,
+    },
+];
+---
+
+<section id="menu" class="py-20 md:py-32 bg-secondary/30 relative">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <h2
+                class="text-3xl md:text-5xl font-bold tracking-tight text-foreground"
+            >
+                Menu <span class="text-primary italic">Andalan</span> Kami
+            </h2>
+            <p class="text-muted-foreground text-lg">
+                Dibuat dengan resep warisan dan bahan-bahan pilihan yang segar
+                setiap hari.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {
+                products.map((product, index) => (
+                    <div
+                        class="group relative bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-border/50 hover:border-primary/50 transform hover:-translate-y-2"
+                        data-aos="fade-up"
+                        data-aos-delay={index * 100}
+                    >
+                        <div class="relative h-64 overflow-hidden">
+                            <img
+                                src={product.image}
+                                alt={product.title}
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
+                            <div class="absolute top-4 right-4">
+                                <Badge
+                                    className={`px-3 py-1 shadow-md text-sm backdrop-blur-md ${
+                                        product.tag === "Best Seller"
+                                            ? "bg-primary text-white hover:bg-primary/90"
+                                            : "bg-white/90 text-primary hover:bg-white"
+                                    }`}
+                                >
+                                    {product.tag}
+                                </Badge>
+                            </div>
+                            <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-card-foreground group-hover:text-primary transition-colors">
+                                        {product.title}
+                                    </h3>
+                                    <div class="flex items-center gap-1 text-yellow-500 mt-1">
+                                        <Star className="w-4 h-4 fill-current" />
+                                        <span class="text-sm font-medium text-muted-foreground">
+                                            {product.rating}
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-xl font-bold text-primary">
+                                    {product.price}
+                                </p>
+                            </div>
+
+                            <p class="text-muted-foreground line-clamp-2">
+                                {product.description}
+                            </p>
+
+                            <a
+                                href={`https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20${product.title}`}
+                                target="_blank"
+                                class="w-full inline-flex items-center justify-center rounded-full mt-4 group font-semibold h-10 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+                            >
+                                Pesan Sekarang{" "}
+                                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                            </a>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

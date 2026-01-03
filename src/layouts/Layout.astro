@@ -1,0 +1,52 @@
+---
+import "../styles/global.css";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const {
+    title = "Warung Pecel Mbak Mintul - Kelezatan Otentik Khas Madiun",
+    description = "Nikmati Pecel Khas Madiun yang otentik, Lontong Sayur, dan Sate legendaris dengan bumbu kacang rahasia di Warung Pecel Mbak Mintul.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="description" content={description} />
+        <title>{title}</title>
+
+        <!-- Google Fonts: Outfit -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- AOS Animation CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body
+        class="font-sans antialiased overflow-x-hidden w-full selection:bg-primary selection:text-white"
+    >
+        <slot />
+
+        <!-- Initialize AOS -->
+        <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script is:inline>
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100,
+                easing: "ease-out-cubic",
+            });
+        </script>
+    </body>
+</html>

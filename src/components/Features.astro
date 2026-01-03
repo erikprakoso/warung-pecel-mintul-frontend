@@ -1,0 +1,68 @@
+---
+import { Leaf, UtensilsCrossed, Heart, Flame } from "lucide-react";
+---
+
+<section
+    class="py-24 bg-primary text-primary-foreground relative overflow-hidden"
+>
+    {/* Background Pattern */}
+    <div
+        class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/food.png')]"
+    >
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="grid md:grid-cols-3 gap-12 text-center">
+            <div
+                class="flex flex-col items-center space-y-4 group"
+                data-aos="fade-up"
+                data-aos-delay="0"
+            >
+                <div
+                    class="p-6 bg-white/10 rounded-full backdrop-blur-sm group-hover:bg-white/20 transition-colors duration-300"
+                >
+                    <Leaf className="w-12 h-12 text-green-300" />
+                </div>
+                <h3 class="text-2xl font-bold">Sayuran Segar Tiap Hari</h3>
+                <p class="text-primary-foreground/80 max-w-xs">
+                    Kami belanja setiap subuh untuk memastikan kesegaran sayuran
+                    hijau di piring Anda.
+                </p>
+            </div>
+
+            <div
+                class="flex flex-col items-center space-y-4 group"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                <div
+                    class="p-6 bg-white/10 rounded-full backdrop-blur-sm group-hover:bg-white/20 transition-colors duration-300"
+                >
+                    <Flame className="w-12 h-12 text-yellow-300" />
+                </div>
+                <h3 class="text-2xl font-bold">Bumbu Kacang Homemade</h3>
+                <p class="text-primary-foreground/80 max-w-xs">
+                    Resep rahasia keluarga, diuleg dengan cinta tanpa bahan
+                    pengawet sedikitpun.
+                </p>
+            </div>
+
+            <div
+                class="flex flex-col items-center space-y-4 group"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+                <div
+                    class="p-6 bg-white/10 rounded-full backdrop-blur-sm group-hover:bg-white/20 transition-colors duration-300"
+                >
+                    <Heart className="w-12 h-12 text-pink-300" />
+                </div>
+                <h3 class="text-2xl font-bold">Dimasak sepenuh Hati</h3>
+                <p class="text-primary-foreground/80 max-w-xs">
+                    Setiap hidangan disiapkan dengan kebersihan dan ketulusan
+                    untuk kepuasan Anda.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
