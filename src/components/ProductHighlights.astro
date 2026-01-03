@@ -17,25 +17,34 @@ const products = [
         description:
             "Sayuran hijau segar dengan guyuran sambal kacang kental yang gurih dan pedas pas.",
         price: "Rp 12.000",
-        image: "https://images.unsplash.com/photo-1647102398918-1936e92c2da2?q=80&w=2670&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800&auto=format&fit=crop",
         tag: "Best Seller",
         rating: 4.9,
     },
     {
-        title: "Lontong Sayur",
+        title: "Nasi Lodeh",
         description:
-            "Kuah santan gurih dengan isian lengkap: labu siam, tahu, telur, dan kerupuk.",
+            "Kuah santan gurih meresap sempurna, disajikan dengan nasi hangat dan lauk pilihan.",
         price: "Rp 13.000",
-        image: "https://images.unsplash.com/photo-1603083569726-5fa965cb2a25?q=80&w=2670&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1563896583-a7407a5146c8?q=80&w=800&auto=format&fit=crop",
         tag: "Favorit",
         rating: 4.8,
     },
     {
-        title: "Lontong Campur",
+        title: "Mie Wut",
         description:
-            "Perpaduan unik rasa pecel dan lodeh dalam satu piring. Nikmat tiada tara.",
-        price: "Rp 15.000",
-        image: "https://images.unsplash.com/photo-1563896583-a7407a5146c8?q=80&w=2670&auto=format&fit=crop",
+            "Mie goreng pedas nampol dengan bumbu rahasia yang bikin nagih. Pedas level 1-5!",
+        price: "Rp 12.000",
+        image: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=800&auto=format&fit=crop",
+        tag: "Pedas Mampus",
+        rating: 4.8,
+    },
+    {
+        title: "Pentol Jadul",
+        description:
+            "Camilan legendaris! Daging sapi asli, kenyal gurih, disiram saus kacang spesial.",
+        price: "Rp 10.000",
+        image: "https://images.unsplash.com/photo-1541614101331-1a6a3dc7eac2?q=80&w=800&auto=format&fit=crop",
         tag: "Must Try",
         rating: 4.9,
     },
@@ -56,7 +65,7 @@ const products = [
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {
                 products.map((product, index) => (
                     <div
@@ -107,7 +116,7 @@ const products = [
                             </p>
 
                             <a
-                                href={`https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20${product.title}`}
+                                href={`https://wa.me/6287823510396?text=Halo,%20saya%20ingin%20pesan%20${product.title}`}
                                 target="_blank"
                                 class="w-full inline-flex items-center justify-center rounded-full mt-4 group font-semibold h-10 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
                             >

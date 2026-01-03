@@ -64,7 +64,7 @@ export default function Hero() {
                             variant="outline"
                             size="lg"
                             className="text-lg px-8 py-6 rounded-full border-2 border-white/20 bg-transparent hover:bg-white/10 hover:text-primary text-white backdrop-blur-sm hover:border-primary/50 transition-all duration-300"
-                            onClick={() => window.open('https://wa.me/6281234567890?text=Halo%20Warung%20Pecel%20Mintul,%20saya%20ingin%20pesan...', '_blank')}
+                            onClick={() => window.open('https://wa.me/6287823510396?text=Halo%20Warung%20Pecel%20Mintul,%20saya%20ingin%20pesan...', '_blank')}
                         >
                             Pesan via WhatsApp <ArrowRight className="ml-2 w-5 h-5" />
                         </Button>
