@@ -8,7 +8,7 @@ interface Props {
 
 const {
     title = "Sego Pecel Mbak Mintul - Kelezatan Otentik Khas Madiun",
-    description = "Nikmati Pecel Khas Madiun yang otentik, Lontong Sayur, dan Sate legendaris dengan bumbu kacang rahasia di Sego Pecel Mbak Mintul.",
+    description = "Nikmati Pecel Khas Madiun yang otentik, Lontong Pecel, dan Sate legendaris dengan bumbu kacang rahasia di Sego Pecel Mbak Mintul.",
 } = Astro.props;
 ---
 
@@ -20,7 +20,56 @@ const {
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
         <meta name="description" content={description} />
+        <meta
+            name="keywords"
+            content="sego pecel, pecel madiun, kuliner madiun, sate, lontong pecel, warung makan, mbak mintul"
+        />
+        <link rel="canonical" href={Astro.url} />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={Astro.url} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta
+            property="og:image"
+            content="https://www.pecelmintul.my.id/images/hero.webp"
+        />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={Astro.url} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <meta
+            property="twitter:image"
+            content="https://www.pecelmintul.my.id/images/hero.webp"
+        />
+
         <title>{title}</title>
+
+        <script
+            type="application/ld+json"
+            set:html={JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Restaurant",
+                name: "Sego Pecel Mbak Mintul",
+                image: "https://www.pecelmintul.my.id/images/hero.webp",
+                description:
+                    "Nikmati Pecel Khas Madiun yang otentik, Lontong Pecel, dan Sate legendaris dengan bumbu kacang rahasia di Sego Pecel Mbak Mintul.",
+                address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "Jl. Khas Madiun No. 1",
+                    addressLocality: "Madiun",
+                    addressRegion: "Jawa Timur",
+                    postalCode: "63100",
+                    addressCountry: "ID",
+                },
+                priceRange: "Rp 5.000 - Rp 50.000",
+                servesCuisine: "Indonesian",
+                telephone: "+6287823510396",
+            })}
+        />
 
         <!-- Google Fonts: Outfit -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />

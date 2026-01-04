@@ -1,12 +1,12 @@
 import React from 'react';
 
-const images = [
-    "https://images.unsplash.com/photo-1594970425008-543328ee8d8d?q=80&w=2670&auto=format&fit=crop", // Sate
-    "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop", // Pecel dark
-    "https://images.unsplash.com/photo-1603569283847-aa295f0d016a?q=80&w=2670&auto=format&fit=crop", // Smoothies/Drinks
-    "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2680&auto=format&fit=crop", // Healthy food
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2670&auto=format&fit=crop", // Food smoke
-    "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?q=80&w=2670&auto=format&fit=crop", // Delicious details
+const galleryItems = [
+    { src: "/images/galeri-1.webp", alt: "Suasana Warung Pecel Mintul yang nyaman" },
+    { src: "/images/galeri-2.jpeg", alt: "Pelanggan menikmati Sego Pecel" },
+    { src: "/images/galeri-3.webp", alt: "Sajian Pecel Pincuk Khas Madiun" },
+    { src: "/images/galeri-4.jpg", alt: "Aneka Gorengan dan Sate Pelengkap" },
+    { src: "/images/galeri-5.jpg", alt: "Proses peracikan Sego Pecel" },
+    { src: "/images/galeri-6.jpg", alt: "Warung Pecel Mintul ramai pengunjung" },
 ];
 
 export default function Gallery() {
@@ -19,7 +19,7 @@ export default function Gallery() {
                 </div>
 
                 <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
-                    {images.map((src, idx) => (
+                    {galleryItems.map((item, idx) => (
                         <div
                             key={idx}
                             className="break-inside-avoid relative group rounded-xl overflow-hidden mb-4"
@@ -27,8 +27,8 @@ export default function Gallery() {
                             data-aos-delay={idx * 100}
                         >
                             <img
-                                src={src}
-                                alt={`Gallery ${idx}`}
+                                src={item.src}
+                                alt={item.alt}
                                 className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-110"
                                 loading="lazy"
                             />

@@ -13,11 +13,11 @@ import { ArrowRight, Star } from "lucide-react";
 
 const products = [
     {
-        title: "Nasi Pecel Madiun",
+        title: "Nasi Pecel",
         description:
             "Sayuran hijau segar dengan guyuran sambal kacang kental yang gurih dan pedas pas.",
-        price: "Rp 12.000",
-        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800&auto=format&fit=crop",
+        price: "Rp 6.000",
+        image: "/images/nasi-pecel.jpeg",
         tag: "Best Seller",
         rating: 4.9,
     },
@@ -25,8 +25,8 @@ const products = [
         title: "Nasi Lodeh",
         description:
             "Kuah santan gurih meresap sempurna, disajikan dengan nasi hangat dan lauk pilihan.",
-        price: "Rp 13.000",
-        image: "https://images.unsplash.com/photo-1563896583-a7407a5146c8?q=80&w=800&auto=format&fit=crop",
+        price: "Rp 6.000",
+        image: "/images/nasi-lodeh.webp",
         tag: "Favorit",
         rating: 4.8,
     },
@@ -34,8 +34,8 @@ const products = [
         title: "Mie Wut",
         description:
             "Mie goreng pedas nampol dengan bumbu rahasia yang bikin nagih. Pedas level 1-5!",
-        price: "Rp 12.000",
-        image: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=800&auto=format&fit=crop",
+        price: "Rp 3.000",
+        image: "/images/mie-wut.webp",
         tag: "Pedas Mampus",
         rating: 4.8,
     },
@@ -43,8 +43,8 @@ const products = [
         title: "Pentol Jadul",
         description:
             "Camilan legendaris! Daging sapi asli, kenyal gurih, disiram saus kacang spesial.",
-        price: "Rp 10.000",
-        image: "https://images.unsplash.com/photo-1541614101331-1a6a3dc7eac2?q=80&w=800&auto=format&fit=crop",
+        price: "Rp 2.000",
+        image: "/images/pentol-jadul.webp",
         tag: "Must Try",
         rating: 4.9,
     },
@@ -76,7 +76,7 @@ const products = [
                         <div class="relative h-64 overflow-hidden">
                             <img
                                 src={product.image}
-                                alt={product.title}
+                                alt={`${product.title} - Spesial Warung Pecel Mbak Mintul`}
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
                             <div class="absolute top-4 right-4">

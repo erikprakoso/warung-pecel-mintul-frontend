@@ -18,8 +18,8 @@ export default function Hero() {
             {/* Background - Darkened for text readability */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop"
-                    alt="Pecel Pincuk Background"
+                    src="/images/hero.webp"
+                    alt="Sego Pecel Pincuk Madiun - Warung Mbak Mintul"
                     className="w-full h-full object-cover"
                 />
                 {/* Gradient Overlay for "Racing Red" vibe */}
@@ -39,11 +39,11 @@ export default function Hero() {
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight tracking-tight drop-shadow-xl">
-                        Kelezatan Otentik <span className="text-primary italic">Pecel Khas Madiun</span>
+                        Kelezatan Otentik <span className="text-primary italic">Sego Pecel</span>
                     </h1>
 
                     <p className="text-lg md:text-2xl text-gray-200 font-light max-w-2xl drop-shadow-md">
-                        Warisan rasa di setiap suapan. Menyajikan Pecel segar, Lontong Sayur, dan aneka sate legendaris dengan bumbu kacang rahasia.
+                        Warisan rasa di setiap suapan. Menyajikan Pecel segar, Lontong Pecel, dan aneka sate legendaris dengan bumbu kacang rahasia.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
