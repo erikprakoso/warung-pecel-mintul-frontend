@@ -1,12 +1,12 @@
 import React from 'react';
 
 const galleryItems = [
-    { src: "/images/suasana-warung-pecel-mintul.webp", alt: "Suasana Warung Pecel Mintul yang nyaman" },
-    { src: "/images/pelanggan-makan-sego-pecel.jpeg", alt: "Pelanggan menikmati Sego Pecel" },
-    { src: "/images/sego-pecel-pincuk-khas-madiun.webp", alt: "Sajian Pecel Pincuk Khas Madiun" },
-    { src: "/images/gorengan-sate-pelengkap-pecel.jpg", alt: "Aneka Gorengan dan Sate Pelengkap" },
-    { src: "/images/proses-racik-sego-pecel.jpg", alt: "Proses peracikan Sego Pecel" },
-    { src: "/images/warung-pecel-mintul-ramai.jpg", alt: "Warung Pecel Mintul ramai pengunjung" },
+    { src: "/images/sate-usus-pecel-mintul.webp", alt: "Sate Usus Pecel Mintul yang lezat" },
+    { src: "/images/nasi-pecel-madiun-pincuk.webp", alt: "Nasi Pecel Pincuk Khas Madiun yang lezat" },
+    { src: "/images/nasi-lodeh-khas-madiun.webp", alt: "Nasi Lodeh Khas Madiun yang lezat" },
+    { src: "/images/mie-wut-gurih-nampol.webp", alt: "Mie Wut Gurih Nampol yang lezat" },
+    { src: "/images/pentol-jadul-spesial.webp", alt: "Pentol Jadul Spesial dengan isian" },
+    { src: "/images/sate-keong-pecel-mintul.webp", alt: "Sate Keong Pecel Mintul yang lezat" },
 ];
 
 export default function Gallery() {
