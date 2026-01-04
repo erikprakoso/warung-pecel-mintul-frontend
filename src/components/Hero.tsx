@@ -18,7 +18,7 @@ export default function Hero() {
             {/* Background - Darkened for text readability */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/images/hero.webp"
+                    src="/images/sego-pecel-mbak-mintul-banner.webp"
                     alt="Sego Pecel Pincuk Madiun - Warung Mbak Mintul"
                     className="w-full h-full object-cover"
                 />
