@@ -43,7 +43,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="text-lg md:text-2xl text-gray-200 font-light max-w-2xl drop-shadow-md">
-                        Warisan rasa di setiap suapan. Menyajikan Pecel segar, Lontong Pecel, dan aneka sate legendaris dengan bumbu kacang rahasia.
+                        Warisan rasa di setiap suapan. Menyajikan Nasi Pecel Madiun segar, Lontong Pecel, dan aneka sate legendaris dengan bumbu kacang rahasia.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
